@@ -5,14 +5,8 @@
     Return the head of the linked list after doubling it.
 """
 
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
-
 class Solution:
-    def doubleIt(self, head):
+    def doubleIt(self, head: Optional[ListNode]) -> Optional[ListNode]:
         # Reversing
         prev, current = None, head
         while current:
